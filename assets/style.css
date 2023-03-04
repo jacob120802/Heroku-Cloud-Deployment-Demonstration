@@ -1,0 +1,604 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  header {
+    background-color: #023246;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .banner {
+    background-image: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner p {
+    font-size: 1.5rem;
+  }
+  
+  .about {
+    background-color: #f8f8f8;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    margin-bottom: 20px;
+  }
+  
+  .courses {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .courses h2 {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th {
+    background-color: #023246;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  .admissions {
+    background-color: #f8f8f8;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .admissions h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    margin-bottom: 20px;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+    header {
+      height: 80px;
+    }
+  
+    nav ul li {
+      margin-right: 10px;
+    }
+  
+    .banner {
+      height: 300px;
+    }
+  
+    .banner h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  
+    .banner p {
+      font-size: 1rem;
+    }
+  
+    .about {
+      padding: 20px;
+    }
+  
+    .about h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .courses {
+      padding: 20px;
+    }
+  
+    .courses h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    th {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+  
+    td {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+  
+    .admissions {
+      padding: 20px;
+    }
+  
+    .admissions h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .contact {
+        padding: 20px;
+      }
+    
+      .contact h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+    
+      .contact p {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+    
+      form label {
+        font-size: 0.8rem;
+      }
+    
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 0.8rem;
+      }
+    
+      form input[type="submit"] {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+    /* Adjust styles for desktop screens */
+    header {
+    height: 80px;
+    }
+    
+    nav ul li {
+    margin-right: 30px;
+    }
+    
+    .banner h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+    }
+    
+    .banner p {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    }
+    
+    .about {
+    padding: 100px;
+    }
+    
+    .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    }
+    
+    .courses {
+    padding: 100px;
+    }
+    
+    .courses h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    }
+    
+    table {
+    margin-top: 40px;
+    }
+    
+    th {
+    padding: 20px;
+    }
+    
+    td {
+    padding: 20px;
+    }
+    
+    .admissions {
+    padding: 100px;
+    }
+    
+    .admissions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    }
+    
+    .contact {
+    padding: 100px;
+    }
+    
+    .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    }
+    
+    .contact p {
+    margin-bottom: 40px;
+    }
+    }
+    
+    @media screen and (max-width: 991px) {
+    /* Adjust styles for mobile screens */
+    header {
+    height: 60px;
+    }
+    
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    
+    .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    }
+    
+    .banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    }
+    
+    .about {
+    padding: 50px;
+    }
+    
+    .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+    
+    .courses {
+    padding: 50px;
+    }
+    
+    .courses h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+    
+    table {
+    margin-top: 20px;
+    }
+    
+    th {
+    padding: 10px;
+    }
+    
+    td {
+    padding: 10px;
+    }
+    
+    .admissions {
+    padding: 50px;
+    }
+    
+    .admissions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+    
+    .contact {
+    padding: 50px;
+    }
+    
+    .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+    
+    .contact p {
+    margin-bottom: 30px;
+    }
+}
+    
+    
+    
+@media screen and (max-width: 768px) {
+    header {
+      height: auto;
+    }
+    nav ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    background-color: #666;
+    color: #fff;
+  }
+  header {
+    background-color: #023246;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #fff;
+    color: #023246;
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .nav-links {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 60px;
+      background-color: #023246;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    .nav-links li {
+      opacity: 0;
+    }
+  
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .line1,
+    .line2,
+    .line3 {
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background-color: #fff;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-active {
+      transform: translateX(0%);
+    }
+  
+    .nav-links li {
+      opacity: 1;
+    }
+  }     
+  .twitter-icon,
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.googleplus-icon,
+.youtube-icon,
+.foursquare-icon{
+	margin-top: .625em;
+	width: 40px;
+	height: 40px;
+	opacity: .6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+  border-radius: 25px;
+}
+
+.twitter-icon:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.googleplus-icon:hover,
+.youtube-icon:hover,
+.foursquare-icon:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.footer-nav p {
+	text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #023246;
+  color: #fff;
+  position: relative;
+}
+
+.logo-container img {
+  width: 100px;
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navbar toggle button styles */
+#navbar-toggle-btn {
+  display: none; /* hide the button by default */
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+/* Show/hide navbar when button is clicked */
+.navbar-open {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  /* Hide the navbar by default */
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #023246;
+    width: 100%;
+  }
+
+  /* Show the button */
+  #navbar-toggle-btn {
+    display: block;
+  }
+
+  /* Rotate the arrow icon */
+  .navbar-open #navbar-toggle-btn .arrow-icon {
+    transform: rotate(-135deg);
+  }
+}
